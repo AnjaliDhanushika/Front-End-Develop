@@ -1,0 +1,93 @@
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+h1{
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+ .container h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkblue;
+    text-align: left;
+    margin-left: 1rem;
+}
+.container h3 {
+    margin-left: 1rem;
+}
+.boxes{
+    display: block;
+    width: 30%;
+    height: 220px;
+    background: rgb(63, 63, 62);
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 1.5%;
+    cursor: pointer;
+}
+.da-image{
+   min-height: 100%;
+   width: 100%;
+   image-orientation: from-image;
+   opacity: 0.6;
+
+}
+.overlay{
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0%;
+    left: -100%;
+    color: #726b6b;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 10;
+}
+
+.container{
+    width: 1170px;
+    display: block;
+    margin: auto;
+}
+
+
+.wrapper {
+    position: relative;
+    margin: 20px;
+  }
+  .wrapper img {
+    width:50%;
+  }
+  .description {
+    position: absolute;
+    width:100%;
+    bottom: 4px;
+    left:0;
+  }
+  .title {
+    bottom: 0;
+    left: 0;
+    color: #f7eded;
+    font-family:unset;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: medium;
+    text-align: center;
+  }
